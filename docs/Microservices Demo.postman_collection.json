@@ -1,0 +1,42 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Microservices Demo",
+		"_postman_id": "9b69cbab-f8af-c84f-a2f5-d4727fd0785b",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8020 - bill",
+			"request": {
+				"url": "localhost:8020/bill",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cartItems\": [\n\t\t{ \"productId\": \"001\", \"quantity\": 5 },\n\t\t{ \"productId\": \"002\", \"quantity\": 2 }\n\t]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8010 - products",
+			"request": {
+				"url": "http://localhost:8010/products",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
