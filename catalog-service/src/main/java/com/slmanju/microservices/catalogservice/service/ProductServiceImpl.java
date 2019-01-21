@@ -25,4 +25,9 @@ public class ProductServiceImpl implements ProductService {
                 .collect(toList());
     }
 
+    @Override
+    public ProductView findById(String id) {
+        return productRepository.findById(id).map(Product::view).orElse(null);
+    }
+
 }

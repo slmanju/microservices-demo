@@ -37,6 +37,17 @@
 				"description": ""
 			},
 			"response": []
+		},
+		{
+			"name": "http://localhost:8010/id001",
+			"request": {
+				"url": "http://localhost:8010/id001",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
 		}
 	]
 }

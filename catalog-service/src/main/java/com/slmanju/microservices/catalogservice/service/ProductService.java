@@ -6,4 +6,6 @@ public interface ProductService {
 
     List<ProductView> findAll();
 
+    ProductView findById(String id);
+
 }
