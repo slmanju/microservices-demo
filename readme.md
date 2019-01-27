@@ -7,5 +7,8 @@ http://localhost:8030/
 `mvn clean spring-boot:run -Dserver.port=8011`  
 
 #### Start shoppingcart service
-`mvn clean spring-boot:run -Dserver.port=8020`
+`mvn clean spring-boot:run -Dserver.port=8020`  
+
+#### Start api gateway
+`mvn clean spring-boot:run -Dserver.port=8040`
 
