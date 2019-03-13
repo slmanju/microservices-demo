@@ -1,7 +1,21 @@
+#spring:
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/slmanju/microservices-demo/tree/config-server/configs
+#          skipSslValidation: true
+
+#Server port
+server:
+  port: 8888
+
+#Git repo location.
 spring:
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/slmanju/microservices-demo/tree/config-server/config-server/configs
+          uri: https://github.com/slmanju/microservices-demo
+          searchPaths: configurations
           skipSslValidation: true
