@@ -17,5 +17,6 @@ spring:
       server:
         git:
           uri: https://github.com/slmanju/microservices-demo
+          default-label: config-server
           searchPaths: configurations
           skipSslValidation: true
